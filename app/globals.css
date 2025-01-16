@@ -19,3 +19,13 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@layer base {
+  @font-face {
+    font-family: 'Now';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../public/now.otf) format('woff2');
+  }
+}
