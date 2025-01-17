@@ -1,5 +1,4 @@
 "use client"
-import Header from "./Components/header";
 
 export default function Home() {
   let shadow = '';
@@ -9,7 +8,6 @@ export default function Home() {
 
   return (
     <div className="w-full h-full">
-      <Header />
       <main className="h-screen bg-cover flex flex-col bg-main items-center justify-center font-[family-name:var(--font-geist-sans)]">
         <div className="relative text-center">
           <h1
@@ -25,7 +23,6 @@ export default function Home() {
         </div>
       </main>
       <footer></footer>
-
       {/* Custom animations */}
       <style jsx>{`
         @keyframes fadeInOut {
