@@ -13,7 +13,7 @@ export default function Header() {
       <button onClick={() => router.push('/about')} className=" transition-all hover:text-gray-700 text-sm md:text-lg">
         About
       </button>
-      <button onClick={() => router.push('/about')} className= " transition-all hover:text-gray-700 text-sm md:text-lg">
+      <button onClick={() => router.push('/projects')} className= " transition-all hover:text-gray-700 text-sm md:text-lg">
         Projects
       </button>
       <button onClick={() => router.push('/about')} className="  transition-all hover:text-gray-700 text-sm md:text-lg">
