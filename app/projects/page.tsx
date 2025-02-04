@@ -48,13 +48,13 @@ export default function Projects() {
         <div className="text-black w-[500px] h-[500px] pt-10 flex flex-col justify-start items-start">
           <h2 className="mr-10">The Weeble</h2>
           <p className="mr-10 mt-5">
-            As a child I loved watching animes and I've always had an appreciation for the music associated with different shows. I wanted to make a game where users could guess what show a song was from so I did!
+            As a child I loved watching animes and I&apos;ve always had an appreciation for the music associated with different shows. I wanted to make a game where users could guess what show a song was from so I did!
             <br/>
             <br/>
             I populated a json file using a web scraper I built in node and puppeteer and each day the site updates to give users a new anime to guess.
             <br/>
             <br/>
-            Each user's previous scores are stored in local storaged and visualized on a bar graph built with D3. 
+            Each user&apos;s previous scores are stored in local storaged and visualized on a bar graph built with D3. 
           </p>
         </div>
         <div
