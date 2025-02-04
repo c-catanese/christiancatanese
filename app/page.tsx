@@ -8,7 +8,7 @@ export default function Home() {
 
   return (
     <div className="w-full h-[calc(100%-64px)] pt-16">
-      <main className="h-screen bg-cover flex flex-col bg-main items-center justify-center font-[family-name:var(--font-geist-sans)]">
+      <main className="h-[calc(100vh-64px)] bg-cover flex flex-col bg-main items-center justify-center font-[family-name:var(--font-geist-sans)]">
         <div className="relative text-center">
           <h1
             className="font-['now'] text-black text-6xl animate-fadeInOut"
@@ -23,7 +23,6 @@ export default function Home() {
         </div>
       </main>
       <footer></footer>
-      {/* Custom animations */}
       <style jsx>{`
         @keyframes fadeInOut {
           0% {

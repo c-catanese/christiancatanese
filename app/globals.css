@@ -29,30 +29,3 @@ body {
     src: url(../public/now.otf) format('woff2');
   }
 }
-
-.page-transition {
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-  position: absolute; /* Ensures it layers on top of other content */
-  width: 100%; /* Ensures the sliding effect spans the full width */
-  height: 100%; /* Ensures it covers the full page */
-}
-
-.page-enter {
-  opacity: 0;
-  transform: translateX(100%); /* Starts off-screen to the right */
-}
-
-.page-enter-active {
-  opacity: 1;
-  transform: translateX(0); /* Slides into place */
-}
-
-.page-exit {
-  opacity: 1;
-  transform: translateX(0); /* Starts from the current position */
-}
-
-.page-exit-active {
-  opacity: 0;
-  transform: translateX(-100%); /* Slides off-screen to the left */
-}
