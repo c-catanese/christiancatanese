@@ -1,5 +1,6 @@
-export default function Admin() {
+// import styles from "./page.module.scss"
 
+function Admin() {
   return (
     <div className="bg-black w-screen h-screen">
       <main className="h-full flex flex-col items-center justify-center font-[family-name:var(--font-geist-sans)]">
@@ -21,3 +22,5 @@ export default function Admin() {
     </div>
   );
 }
+
+export default Admin
