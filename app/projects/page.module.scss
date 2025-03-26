@@ -2,7 +2,7 @@
   background-color: var(--color-main);
   width: 100%;
   height: calc(100% - 64px);
-  padding-top: 16px;
+  padding-top: 4.5rem;
 }
 
 .projectRow {
@@ -42,10 +42,10 @@
   color: black;
   width: 500px;
   height: 500px;
-  padding-top: 10px;
+  padding-left: 20px;
+  padding-top: 20px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  padding-left: 10px;
 }

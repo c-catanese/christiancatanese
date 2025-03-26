@@ -1,0 +1,93 @@
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  20% {
+    transform: translateX(-100%);
+  }
+  35%, 100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes widthReveal {
+  0% {
+    opacity: 0;
+    width: 0;
+  }
+  20% {
+    opacity: 1;
+    width: 0;
+  }
+  30%, 80% {
+    width: 100%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.animateFadeInOut {
+  animation: fadeInOut 4s;
+}
+
+.animateSlideIn {
+  animation: slideIn 7s;
+}
+
+.animateWidthReveal {
+  animation: widthReveal 7s;
+}
+
+.mainContainer {
+  width: 100%;
+  height: calc(100% - 64px);
+  padding-top: 16px;
+}
+
+.mainContent {
+  height: calc(100vh - 64px);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-main);
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-geist-sans);
+}
+
+.textContainer {
+  position: relative;
+  text-align: center;
+}
+
+.title {
+  font-family: "now";
+  color: black;
+  font-size: 4rem;
+}
+
+.subtitleWrapper {
+  display: inline-block;
+  height: fit-content;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.subtitle {
+  font-family: "now";
+  height: fit-content;
+  padding: 20px 0;
+  color: black;
+  font-size: 2.5rem;
+}

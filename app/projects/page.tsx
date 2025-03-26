@@ -43,8 +43,7 @@ export default function Projects() {
         <div className={styles.textWrapper}>
           <h2>The Weeble</h2>
           <p>
-            As a child I loved watching animes and I&apos;ve always had an appreciation for the music associated with
-            different shows. I wanted to make a game where users could guess what show a song was from so I did!
+            desc
           </p>
         </div>
         <div
