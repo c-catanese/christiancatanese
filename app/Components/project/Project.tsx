@@ -29,7 +29,7 @@ export default function Project({ title, description, url, alignmentLeft }: Proj
         onMouseEnter={() => handleMouseHover(true)}
         onMouseLeave={() => handleMouseHover(false)}
       >
-        <iframe className={styles.iframeSizing} width={500} height={500} src={url} title="Helpful Widget" />
+        <iframe className={styles.iframeSizing} src={url} title="Helpful Widget" />
         {isHovered && (
           <div className={styles.overlay}>
             <p>Technologies Used</p>

@@ -2,10 +2,10 @@
 import styles from "./Home.module.scss";
 
 export default function Home() {
-  let shadow = "";
-  for (let i = 0; i < 20; i++) {
-    shadow += (shadow ? "," : "") + -i * 1 + "px " + i * 1 + "px 0 rgb(13 148 136)";
-  }
+  // let shadow = "";
+  // for (let i = 0; i < 20; i++) {
+  //   shadow += (shadow ? "," : "") + -i * 1 + "px " + i * 1 + "px 0 rgb(13 148 136)";
+  // }
 
   return (
     <div className={styles.mainContainer}>

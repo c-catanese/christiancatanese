@@ -1,29 +1,18 @@
 .container {
   width: 100%;
   color: black;
-  background-color: var(--main);
-  height: 3rem;
+  background-color: #deedef;
+  height: fit-content;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  padding: 1.25rem;
   position: fixed;
+  padding: 1.5rem;
   z-index: 10;
-}
-
-@media (min-width: 768px) {
-  .container {
-      padding: 1.5rem;
-  }
-}
-
-@media (min-width: 640px) {
-  .container {
-      height: 4rem;
-  }
 }
 
 .pageLink{
   font-size: 16pt;
   color: black;
+  height: fit-content;
 }
