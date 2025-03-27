@@ -53,3 +53,14 @@
   justify-content: flex-start;
   align-items: flex-start;
 }
+
+@media screen and (max-width: 1000px) {
+  .projectRow {
+    flex-direction: column-reverse;
+    margin-bottom: 20px;
+
+    &.leftAligned {
+      flex-direction: column-reverse; 
+    }
+  }
+}
