@@ -1,17 +1,16 @@
 "use client";
-import styles from "./Project.module.scss";
+import styles from "./project.module.scss";
 import React, { useState } from "react";
-import Image from "next/image";
 
 interface ProjectProps {
   title: string;
   description: string;
-  img: string;
+  url: string;
   alignmentLeft: boolean;
 }
 
 
-export default function Project({ title, description, img, alignmentLeft }: ProjectProps) {
+export default function Project({ title, description, url, alignmentLeft }: ProjectProps) {
   const [isHovered, setIsHovered] = useState(false);
 
   const handleMouseHover = (status: boolean) => {
@@ -30,7 +29,7 @@ export default function Project({ title, description, img, alignmentLeft }: Proj
         onMouseEnter={() => handleMouseHover(true)}
         onMouseLeave={() => handleMouseHover(false)}
       >
-        <Image className={styles.image} width={500} height={500} src={img} alt="project" />
+        <iframe className={styles.iframeSizing} width={500} height={500} src={url} title="Helpful Widget" />
         {isHovered && (
           <div className={styles.overlay}>
             <p>Technologies Used</p>
