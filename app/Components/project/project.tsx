@@ -19,7 +19,7 @@ export default function Project({ title, description, url, alignmentLeft }: Proj
 
   return (
     <div className={`${styles.projectRow} ${alignmentLeft ? styles.leftAligned : ""}`}>
-      <div className={styles.textWrapper}>
+      <div className={styles.textWrapper} >
         <h2 className={styles.projectTitle}>{title}</h2>
         <p>
           {description.split('\n').map((line, index) => (
