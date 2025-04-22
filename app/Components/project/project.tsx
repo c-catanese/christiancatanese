@@ -1,6 +1,6 @@
 "use client";
 import styles from "./project.module.scss";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 interface ProjectProps {
   title: string;
@@ -12,10 +12,28 @@ interface ProjectProps {
 
 export default function Project({ title, description, url, alignmentLeft }: ProjectProps) {
   const [isHovered, setIsHovered] = useState(false);
+  const [expanded, setExpanded] = useState(false);
 
   const handleMouseHover = (status: boolean) => {
     setIsHovered(status);
   };
+
+  useEffect(() => {
+    if (expanded) {
+      document.body.classList.add('no-scroll');
+    } else {
+      document.body.classList.remove('no-scroll');
+    }
+      return () => {
+      document.body.classList.remove('no-scroll');
+    };
+  }, [expanded]);
+
+  
+  const expandProject = () => {
+    setExpanded(!expanded)
+    handleMouseHover(false)
+  }
 
   return (
     <div className={`${styles.projectRow} ${alignmentLeft ? styles.leftAligned : ""}`}>
@@ -32,17 +50,35 @@ export default function Project({ title, description, url, alignmentLeft }: Proj
       </div>
 
       <div
-        className={styles.imageWrapper}
+        className={`${styles.imageWrapper} ${expanded ? styles.expanded : ""}`}
         onMouseEnter={() => handleMouseHover(true)}
         onMouseLeave={() => handleMouseHover(false)}
       >
-        <iframe className={styles.iframeSizing} src={url}  title="project" />
-        {isHovered && (
-          <div className={styles.overlay}>
-            <p>Technologies Used</p>
-            <button>See More</button>
-          </div>
-        )}
+      {expanded ? (
+  <div className={`${styles.expandedWrapper}`}>
+    <button className={styles.closeButton} onClick={expandProject}>X</button>
+    <iframe
+      className={`${styles.iframeSizing} ${styles.expanded}`}
+      src={url}
+      title="project"
+    />
+  </div>
+) : (
+  <>
+    <iframe
+      className={styles.iframeSizing}
+      src={url}
+      title="project"
+    />
+    {isHovered && (
+      <div className={styles.overlay}>
+        <p>Technologies Used</p>
+        <button onClick={expandProject}>See More</button>
+      </div>
+    )}
+  </>
+)}
+
       </div>
     </div>
   );
