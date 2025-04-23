@@ -1,0 +1,14 @@
+.aboutContainer {
+  background-color: var(--color-main);
+  width: 100%;
+  height: calc(100% - 64px);
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headshot{
+  margin-top: 10px;
+  border-radius: 50%;
+}
