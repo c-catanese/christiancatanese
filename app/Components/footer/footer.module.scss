@@ -1,0 +1,31 @@
+.container {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 800px;
+  color: black;
+  background-color: #deedef;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 1.5rem;
+  z-index: 10;
+  border-bottom: 1px solid black;;
+}
+
+.pageLink{
+  font-size: 16pt;
+  color: black;
+  height: fit-content;
+}
+
+.logoContainer{
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}

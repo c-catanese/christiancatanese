@@ -1,6 +1,6 @@
 "use client";
 import styles from "./Home.module.scss";
-
+import Footer from "./Components/footer/footer"
 export default function Home() {
   // let shadow = "";
   // for (let i = 0; i < 20; i++) {
@@ -16,8 +16,8 @@ export default function Home() {
             <h2 className={`${styles.subtitle} ${styles.animateSlideIn}`}>Software Engineer</h2>
           </div>
         </div>
+        <Footer/>
       </main>
-      <footer></footer>
     </div>
   );
 }
