@@ -21,6 +21,7 @@ export default function About() {
         <h2 className={styles.heading}>Skills:</h2>
         <p> Javascript, Typescript, CSS, HTML, </p>
       </div>
+      
     </div>
   );
 }

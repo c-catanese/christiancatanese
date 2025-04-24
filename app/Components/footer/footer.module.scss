@@ -1,17 +1,14 @@
 .container {
-  position: absolute;
-  bottom: 100px;
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;
   width: 90%;
-  max-width: 800px;
+  max-width: 1000px;
   color: black;
   background-color: #deedef;
   height: fit-content;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  padding: 1.5rem;
+  padding: 100px 0px 30px 0px;
   z-index: 10;
   border-bottom: 1px solid black;;
 }

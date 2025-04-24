@@ -1,6 +1,7 @@
 "use client"
 import styles from "./page.module.scss";
 import Project from "../Components/project/project"
+import Footer from "../Components/footer/footer";
 
 export default function Projects() {
   return (
@@ -20,7 +21,7 @@ export default function Projects() {
         alignmentLeft={true} 
         url={"https://www.tccginc.com"} 
         description={`In High School I did some work from time to time with a local technology consulting company and they reached out to me following my college graduation and asked me to build them a new website.\n\n They wanted a Single Page Application with a lot of information in it and I decided to use Next and created them a site with a navbar that scrolls on click. \n\n This was my first project using AVIF files and I also tested out WebP files and although they were compatible with more browsers I thought the AVIF files were better for this particular project due to it being a technology company.\n\n There was no need for a database in this project since it's just a landing page but I had to use AI to create a logo which was tedious because they aren't very good at generating images with letters.`}/>
-      
+      <Footer/>
       {/* <Project title={'SolidRewind'} alignmentLeft={false} url={"https://vandytft.com"} description=""/> */}
    </div>
   );
