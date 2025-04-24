@@ -18,7 +18,7 @@ export default function Header() {
       <button onClick={() => router.push('/projects')} className={styles.pageLink}>
         Projects
       </button>
-      <button onClick={() => router.push('/about')}className={styles.pageLink}>
+      <button onClick={() => router.push('/blog')}className={styles.pageLink}>
         Blog
       </button>
     </div>

@@ -28,6 +28,13 @@ export default function About() {
       </div>
 
       <div className={styles.textBlock}>
+        <h2 className={styles.heading}>Talks/Awards:</h2>
+        <p>Gave a talk sponsored by Jeeny and Bractlet to an audience of over 70 developers on the pros and cons of server
+        side rendering, its various applications, and the future of search engine optimization. <br/> <br/></p>
+        <p>Best Overall at Google + JP Morgan sponsored Hackathon</p>
+      </div>
+
+      <div className={styles.textBlock}>
         <h2 className={styles.heading}>Experience: Politix TV (2023 - Present)</h2>
         <p>Built reusable React components and utilized React Router to create an intuitive navigation experience within
         the web app, promoting code modularity and efficient user flow.<br/><br/></p>
