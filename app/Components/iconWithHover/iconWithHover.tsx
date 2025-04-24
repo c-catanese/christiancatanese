@@ -12,8 +12,7 @@ export default function IconWithHover({ text, img, link }: IconWithHoverProps) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <div className={styles.container}>      
-      {isHovered && <span>{text}</span>}
+    <div className={styles.container}>
       <a
         href={link}
         target="_blank"
@@ -22,13 +21,9 @@ export default function IconWithHover({ text, img, link }: IconWithHoverProps) {
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        <Image
-          width={50}
-          height={50}
-          alt={text}
-          src={img}
-        />
+        <Image width={50} height={50} alt={text} src={img} />
       </a>
+      {isHovered && <span className={styles.hoverText}>{text}</span>}
     </div>
-);
+  );
 }

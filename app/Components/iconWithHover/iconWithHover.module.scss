@@ -5,15 +5,36 @@
   align-items: center;
   text-align: center;
   justify-content: center;
+  color: black;
+  position: relative;  
 }
 
-.pageLink{
+.pageLink {
   font-size: 16pt;
   color: black;
   height: fit-content;
 }
 
-.icon{
+.icon {
   filter: grayscale(100%);
   opacity: 0.5;
+  transition: filter 0.3s ease, opacity 0.3s ease; 
+}
+
+.icon:hover {
+  filter: grayscale(0%);
+  opacity: 1; 
+}
+
+.hoverText {
+  position:absolute;
+  bottom: -25px;
+  opacity: 0; 
+  transform: translateY(10px); 
+  transition: opacity 0.3s ease-in, transform 0.3s ease-in; 
+}
+
+.container:hover .hoverText {
+  opacity: 1; 
+  transform: translateY(0); 
 }
