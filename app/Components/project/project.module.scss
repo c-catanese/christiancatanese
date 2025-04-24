@@ -25,6 +25,12 @@
   background-color: white;
   border-radius: 10px;
 }
+.buttonRow{
+  width: 320px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
 
 .techIcon{
   margin: 5px 10px;
@@ -106,6 +112,12 @@
   display: none;
 }
 
+.technologiesTitle{
+  font-size: 24pt;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
 .overlay {
   position: absolute;
   left: 0;
@@ -161,7 +173,7 @@
 
   .overlay{
     min-width: 490px;
-    width: max(490px, calc(100% - 100px));
+    width: max(490px, calc(100%));
   }
 
   .textWrapper {

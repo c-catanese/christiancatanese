@@ -73,7 +73,7 @@ export default function Project({ title, description, url, technologies, alignme
     />
     {isHovered && (
       <div className={styles.overlay}>
-        <p>Core Technologies</p>
+        <h2 className={styles.technologiesTitle}>Core Technologies</h2>
         <div className={styles.technologyRow}>
           {technologies.map((tech, index) => (
             <div key={index} className={styles.techIcon}>
@@ -86,7 +86,12 @@ export default function Project({ title, description, url, technologies, alignme
             </div>
           ))}
         </div>
-        <button onClick={expandProject}>See More</button>
+        <div className={styles.buttonRow}>
+          <button onClick={expandProject}>Preview</button>
+          <a href={url} target="_blank" rel="noopener noreferrer">
+            <button>Visit Site</button>
+          </a>
+        </div>
       </div>
     )}
   </>
