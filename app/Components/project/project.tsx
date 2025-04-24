@@ -1,16 +1,17 @@
 "use client";
 import styles from "./project.module.scss";
 import React, { useState, useEffect } from "react";
-
+import Image from "next/image";
 interface ProjectProps {
   title: string;
   description: string;
   url: string;
   alignmentLeft: boolean;
+  technologies: string[];
 }
 
 
-export default function Project({ title, description, url, alignmentLeft }: ProjectProps) {
+export default function Project({ title, description, url, technologies, alignmentLeft }: ProjectProps) {
   const [isHovered, setIsHovered] = useState(false);
   const [expanded, setExpanded] = useState(false);
 
@@ -73,6 +74,18 @@ export default function Project({ title, description, url, alignmentLeft }: Proj
     {isHovered && (
       <div className={styles.overlay}>
         <p>Technologies Used</p>
+        <div className={styles.technologyRow}>
+          {technologies.map((tech, index) => (
+            <div key={index} className={styles.techIcon}>
+              <Image
+                src={tech}
+                alt={`Technology ${index}`}
+                width={40}
+                height={40}
+              />
+            </div>
+          ))}
+        </div>
         <button onClick={expandProject}>See More</button>
       </div>
     )}
