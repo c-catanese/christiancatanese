@@ -21,8 +21,14 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-evenly;
+  background-color: white;
+  border-radius: 10px;
 }
 
+.techIcon{
+  margin: 5px 10px;
+}
 .imageWrapper,
 .textWrapper {
   transition: all 0.5s ease-in-out;

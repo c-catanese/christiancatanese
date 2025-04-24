@@ -73,15 +73,15 @@ export default function Project({ title, description, url, technologies, alignme
     />
     {isHovered && (
       <div className={styles.overlay}>
-        <p>Technologies Used</p>
+        <p>Core Technologies</p>
         <div className={styles.technologyRow}>
           {technologies.map((tech, index) => (
             <div key={index} className={styles.techIcon}>
               <Image
                 src={tech}
                 alt={`Technology ${index}`}
-                width={40}
-                height={40}
+                width={100}
+                height={100}
               />
             </div>
           ))}
