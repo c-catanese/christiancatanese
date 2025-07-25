@@ -1,7 +1,7 @@
 "use client"
 // import { useEffect, useState } from "react";
 // import { usePathname } from "next/navigation";
-import Header from "./Components/header/header"; // Import your header
+// import Header from "./Components/header/header"; // Import your header
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} bg-main antialiased`}>
-        <Header /> 
+        {/* <Header />  */}
         <div
           className={``}
         >
